@@ -49,6 +49,7 @@ public class JustifyText {
 		int end = 0;
 		for (int start = 0; start < text.length; row++) {
 			do {
+				//if a word is too long for a single line, notify user and quit
 				if(text[end].length() > width){
 					System.out.printf("\"%s\" longer than specified width. Terminating program.\n", text[end]);
 					System.exit(0);
